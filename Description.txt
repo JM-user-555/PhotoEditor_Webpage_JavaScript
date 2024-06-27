@@ -1,0 +1,20 @@
+Hello, it's Jad Mattar. This is a description file of the project.
+
+In this project, I built a photo editor webpage, in which the user can upload an image 
+and change its properties.
+The photo editor provides an intuitive interface for users to customize their images with features such as:
+1- Border
+2- Border-radius
+3- Opacity
+4- Grey-scale
+5- Rotation
+6- size
+
+We used in this project HTML, CSS and JavaScript. 
+HTML is for the content, CSS is for styling and JavaScript is for interactivity and setting the properties of styling of image.
+We retrived values of the properties from the user and used the function setAttributes in javascript in order to style the image
+uploaded by the user as wanted. Adding conditions to the inputs targets the input validation as well.
+
+This project demonstrates the powerful capabilities of web technologies to create interactive and user-friendly applications.
+This project showcases my ability to integrate and utilize core web technologies to build functional and interactive user interfaces. 
+It demonstrates my skills in front-end development, problem-solving, and attention to detail, making it a valuable project.

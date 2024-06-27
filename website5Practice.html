@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<head>
+    <Title>Website 5</Title>
+<!-- for icons-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" type="text/css" href="website5Practice.css">
+</head>
+
+<body>
+  <div id="Header">
+    <img src="linearGrad.jpg" id="circleHeader">
+    <cite id="HeaderTitle">Photo Editor</cite>
+  </div>
+
+  <div id="UploadImg">
+    <h2 style="margin-left: 28%;margin-right: 28%; font-size: 35px; padding-bottom: 20px; padding-top: 5px;">Upload Image here <i class="fa fa-download"></i></h2>
+    <input type="file" accept="image/png,image/jpg" id="imageChosen" onchange="loadFile(event)">
+  </div>
+  <div id="main">
+    <img id="imgA" >
+  </div>
+  <div id="stylingImgA" style="margin-left: 5%; margin-bottom: 50px;">
+    <h2 style="color:red;">Add the properties of the Image</h2>
+    <button id="addProp" onclick="addPropToimgA()">Add Properties</button>
+    <div id="BorderProperties">
+    <h3 style=" margin-left: 2%; text-decoration: underline;">Border</h3>
+    <label for="imgAborderColor" style=" margin-left: 5%; padding-right: 2%;">Border Color:</label>
+    <input type="color" id="imgAborderColor">
+    <label for="imgAborderSize" style="margin-left: 5%; padding-right: 2%;">Border Size:</label>
+    <input type="number" id="imgAboderSize">
+    <label for="imgAborderStyle" style="margin-left: 5%; padding-right: 2%;">Border Style:</label>
+    <select type="text" id="borderStyle" name="borderStyle" style="width: 180px;">
+    <option value="none">none</option>
+    <option value="solid">solid</option>
+    <option value="dotted">dotted</option>
+    <option value="double">double</option>
+    <option value="outset">outset</option>
+    <option value="inset">inset</option>
+    </select>
+  </div>
+  <div id="BorderRadiusProperties">
+    <h3 style=" margin-left: 2%; text-decoration: underline;">Border-Radius</h3>
+    <label for="imgAborderRadius" style=" margin-left: 5%; padding-right: 2%;">Border-Radius:</label>
+    <input type="range" id="imgAborderRadius">
+  </div>
+  <div id="OpacityProperty">
+    <h3 style=" margin-left: 2%; text-decoration: underline;">Opacity</h3>
+    <label for="imgAbOpacity" style=" margin-left: 5%; padding-right: 5%;">Opacity:</label>
+    <input type="range" id="imgAopacity">
+  </div>
+  <div id="GrayScaleProperty">
+    <h3 style=" margin-left: 2%; text-decoration: underline;">Gray Scale</h3>
+    <label for="imgAborderGS" style=" margin-left: 5%; padding-right: 4%;">Gray Scale:</label>
+    <input type="range" id="imgAGS">
+  </div>
+  <div id="RotateProperties">
+    <h3 style="margin-left: 2%; text-decoration: underline;">Rotation</h3>
+    <label for="imgArotateHoriz" style="margin-left: 5%; padding-right: 3%;">Flip Horizentally:</label>
+    <input type="checkbox" id="imgArotateHoriz">
+    <label for="imgArotateVert" style="margin-left: 12%; padding-right: 3%;">Flip Vertically:</label>
+    <input type="checkbox" id="imgArotateVert">
+    <br><br>
+    <label for="imgArotateR" style="margin-left: 5%; padding-right: 2%;">Rotate Right Angle:</label>
+    <input type="number" id="imgArotateR" style="width: 5%;">
+    <label for="imgArotateL" style="margin-left: 7.1%; padding-right: 2.4%;">Rotate Left Angle:</label>
+    <input type="number" id="imgArotateL" style="width: 5%;">
+  </div>
+  <div id="SizeProperties">
+    <h3 style=" margin-left: 2%; text-decoration: underline;">Size</h3>
+    <label for="imgAwidth" style=" margin-left: 5%; padding-right: 4%;">Size Scale:</label>
+    <input type="number" id="imgAwidth" value="1">
+  </div>
+  </div>
+
+  <div id="reservedRightsDiv">
+    <p>All Rights Reserved <i class="fa fa-check"></i> &emsp;&emsp;&emsp;&emsp; J.Mattar</p>
+  </div>
+
+
+  <script src="website5Practice.js"></script>
+</body>
